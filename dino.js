@@ -2,7 +2,7 @@ class Dino {
   constructor() {
     this.r = 150;
     this.x = 50;
-    this.y = height - 50;
+    this.y = height - this.r;
     this.gravity = 2;
     this.up = 0;
   }
@@ -18,6 +18,6 @@ class Dino {
   }
 
   show() {
-    image(dino, this.x, this.y, this.r, this.r);
+    image(dinoImg, this.x, this.y, this.r, this.r);
   }
 }

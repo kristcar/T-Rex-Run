@@ -1,15 +1,16 @@
-let background;
-let rock;
+let backgroundImg;
+let rockImg;
+let dinoImg;
 let dino;
 
 function preload() {
-  background = loadImage("background.jpg");
-  dino = loadImage("dino.png");
-  rock = loadImage("rock.png");
+  backgroundImg = loadImage("background.jpg");
+  dinoImg = loadImage("dino.png");
+  rockImg = loadImage("rock.png");
 }
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(600, 450);
   dino = new Dino();
 }
 
@@ -20,7 +21,7 @@ function keyPressed() {
 }
 
 function draw() {
-  background(background);
+  background(backgroundImg);
   dino.show();
   dino.move();
 }
