@@ -6,7 +6,7 @@ class Rock {
   }
 
   move() {
-    this.x -= 8;
+    this.x -= 9;
   }
 
   show() {
