@@ -1,12 +1,12 @@
 class Rock {
   constructor() {
     this.x = width;
-    this.r = 100;
+    this.r = 60;
     this.y = height - this.r;
   }
 
   move() {
-    this.x -= 2;
+    this.x -= 8;
   }
 
   show() {
