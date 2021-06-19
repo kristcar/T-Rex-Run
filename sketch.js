@@ -2,6 +2,7 @@ let backgroundImg;
 let rockImg;
 let dinoImg;
 let dino;
+let rocks = [];
 
 function preload() {
   backgroundImg = loadImage("background.jpg");
@@ -21,7 +22,16 @@ function keyPressed() {
 }
 
 function draw() {
+  if (random(1) < 0.01) {
+    rocks.push(new Rock());
+  }
+
   background(backgroundImg);
   dino.show();
   dino.move();
+
+  for (let rock of rocks) {
+    rock.move();
+    rock.show();
+  }
 }
